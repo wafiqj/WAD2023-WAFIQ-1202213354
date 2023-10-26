@@ -17,11 +17,11 @@ if (isset($_POST['tambah'])) {
     $error = null;
 
     if ($tinggi_badan == null && $berat_badan == null) {
-        $error = 'Nilai tinggi badan dan berat badan tidak boleh kosong';
+        $error = 'Nilai tinggi badan dan berat badan tidak boleh kosong!';
     } else if ($tinggi_badan == null) {
-        $error = 'Nilai tinggi badan tidak boleh kosong';
+        $error = 'Nilai tinggi badan tidak boleh kosong!';
     } else if ($berat_badan == null) {
-        $error = 'Nilai berat badan tidak boleh kosong';
+        $error = 'Nilai berat badan tidak boleh kosong!';
     }
 // **********************  2  ************************** 
 
@@ -103,7 +103,7 @@ if (isset($_POST['tambah'])) {
                     <?php 
                     if (isset($_POST['tambah'])) {
                         if ($error != null) {
-                            echo $error;
+                            echo '<span style="color:red";><b>', $error, '</b></span>';
                         }
                     }
                     ?>
