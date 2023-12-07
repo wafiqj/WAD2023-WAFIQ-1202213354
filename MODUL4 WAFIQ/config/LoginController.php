@@ -88,7 +88,7 @@ function rememberMe($cookie)
         // b. Set variabel session dengan key login untuk menyimpan status login
         $_SESSION['login'] = true;
         // c. Set variabel session dengan key id untuk menyimpan id user
-        $_SESSION['username'] = $data2['username'];
+        $_SESSION['id'] = $data2['id'];
     
     //
     } 
